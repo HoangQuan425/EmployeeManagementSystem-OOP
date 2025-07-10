@@ -1,0 +1,18 @@
+﻿using OOPDay4.Entity;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OOPDay4.Repositories
+{
+	public interface IEmployeeRepository
+	{
+		List<Employee> GetAll();
+		bool Add(Employee employee);
+		bool Delete(string employeeId);
+		bool Update(string employeeId, Employee employee);
+		Employee GetById(string employeeId);
+	}
+}
